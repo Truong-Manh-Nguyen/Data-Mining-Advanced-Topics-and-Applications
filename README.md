@@ -1,7 +1,12 @@
 # Data Mining 2 Project
 Overview: Conducted end-to-end analysis on a dataset of 149,531 film records and box-office time series data, covering data preparation, outlier detection, imbalance learning, advanced modeling, and explainability.
+
 Data Preparation & Outliers: Implemented a majority voting strategy using six detection methods (LOF, LODA, Isolation Forest, HBOS, CBLOF, ABOD) to identify and remove the top 1% of outliers, visualizing results via PCA and t-SNE.
+
 Imbalance Learning: Addressed a 92:8 class imbalance for binary rating prediction. Compared Undersampling methods like Random Under Sampler, CNN, ENN, Tomek Links, Cluster Centroids, Oversampling methods like: Random Over Sampler, SMOTE, and ADASYN against algorithmic methods. Found that Class Weight Adjustment, SMOTE, Cluster Centroids are the best in comparison with others.
+
 Advanced Classification & XAI: Developed multi-class models (Logistic Regression, SVM, Neural Networks, Ensemble). XGBoost achieved the best performance (AUC 0.78) on complex, overlapping classes. Utilized SHAP (waterfall and beeswarm plots) to interpret feature importance, identifying startYear and ratingCount as key drivers.
+
 Regression: Applied Neural Networks, Random Forest and Gradient Boosting to predict ratings, with Gradient Boosting achieving the highest R^2 score (0.3669) by minimizing prediction errors sequentially.
+
 Time Series Analysis: Analyzed 100-day revenue lifecycles for 1,134 films. Applied K-Means clustering (Euclidean and DTW distance) and DBSCAN to find revenue patterns and utilized Rocket Classifier, which outperformed KNN and Shapelets with an accuracy of 52%.
